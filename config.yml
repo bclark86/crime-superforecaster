@@ -1,0 +1,11 @@
+crime_data:
+  url: data.cityofnewyork.us
+  current_year_id: 5uac-w243
+  historical_id: 5uac-w243
+
+local_data:
+  dir: 00_data
+  raw_dir: raw
+  processed_dir: processed
+  current_year_file: nyc_crime_2020.csv
+  historic_file: nyc_crime_2006_2019.csv
