@@ -6,3 +6,4 @@
 .idea
 /venv
 __pycache__/
+/00_data/raw

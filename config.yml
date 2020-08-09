@@ -1,11 +1,39 @@
-crime_data:
-  url: data.cityofnewyork.us
-  current_year_id: 5uac-w243
-  historical_id: 5uac-w243
+default:
+  crime_data:
+    url: data.cityofnewyork.us
+    current_year_id: 5uac-w243
+    historical_id: qgea-i56i
 
-local_data:
-  dir: 00_data
-  raw_dir: raw
-  processed_dir: processed
-  current_year_file: nyc_crime_2020.csv
-  historic_file: nyc_crime_2006_2019.csv
+  local_data:
+    dir: 00_data
+    raw_dir: raw
+    app_dir: app
+    current_year_file: nyc_crime_2020.csv
+    historical_file: nyc_crime_2006_2019.csv
+    full_data_file: nyc_felony_crimes
+    daily_data_file: nyc_felony_daily
+    
+  felony_categories:
+    violent:
+      - FELONY ASSAULT
+      - ROBBERY
+      - MURDER & NON-NEGL. MANSLAUGHTER
+      - HOMICIDE-NEGLIGENT,UNCLASSIFIE
+      - HOMICIDE-NEGLIGENT-VEHICLE
+      - KIDNAPPING & RELATED OFFENSES
+      - KIDNAPPING
+    sprecial_victims:
+      - RAPE
+      - SEX CRIMES
+      - FELONY SEX CRIMES
+      - CHILD ABANDONMENT/NON SUPPORT
+      - ABORTION
+    property_financial:
+      - ARSON
+      - BURGLARY
+      - GRAND LARCENY
+      - GRAND LARCENY OF MOTOR VEHICLE
+      - FORGERY
+      - THEFT-FRAUD
+      - POSSESSION OF STOLEN PROPERTY
+      - GAMBLING

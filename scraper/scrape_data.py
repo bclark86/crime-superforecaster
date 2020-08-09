@@ -64,14 +64,9 @@ def query_socrata(dataset_url, identifier, query, limit=10000, offset=0):
 
 def query_crime(dataset_url, identifier):
     
-    crime_query = f"""
-
-        SELECT *
-        
-        WHERE
-            law_cat_cd = 'FELONY'
-        """
+    crime_query = "SELECT * WHERE law_cat_cd = 'FELONY'"
 
     crime_df = query_socrata(dataset_url, identifier, crime_query)
     
     return crime_df
+

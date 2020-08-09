@@ -25,6 +25,16 @@ def main():
         index=False
     )
 
+    # crime_data_historical = query_crime(
+    #     config['crime_data']['url'],
+    #     config['crime_data']['historical_id']
+    # )
+    # 
+    # crime_data_historical.to_csv(
+    #     os.path.join(raw_data_path, config['local_data']['historical_file']),
+    #     index=False
+    # )
+
 
 if __name__ == '__main__':
     main()
